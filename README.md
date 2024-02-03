@@ -1,5 +1,5 @@
 # SA-Flavor-Finder
-<!-- Fix readme at end -->
+
 As a San Antonio tourist, I want to discover the best local dining spots so that I can get the authentic San Antonio experience.
 
 ## Description and Features
@@ -37,6 +37,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     `    ![alt text](assets/images/screenshot.png) -->
 
 ## Credits
+Collaborators:
 
 https://github.com/AnthonyStrickland - Anthony Strickland
 
