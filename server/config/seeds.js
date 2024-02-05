@@ -1,10 +1,12 @@
 const db = require('./connection');
-const { User, Product, Category } = require('../models');
+const { User, FoodTruck, Category, HiddenGem, Restaurant, Product } = require('../models');
 const cleanDB = require('./cleanDB');
 
 db.once('open', async () => {
   await cleanDB('Category', 'categories');
-  await cleanDB('Product', 'products');
+  await cleanDB('FoodTruck', 'foodtrucks');
+  await cleanDB('HiddenGem', 'hiddengems');
+  await cleanDB('Restaurant', 'restaurants');
   await cleanDB('User', 'users');
 
   const categories = await Category.insertMany([
@@ -13,7 +15,7 @@ db.once('open', async () => {
     { name: 'Hidden Gems' }
   ]);
 
-  console.log('categories seeded');
+  console.log('Categories seeded');
     const products = await Product.insertMany([
     {
       name: 'Pizza Italia',
@@ -182,6 +184,24 @@ db.once('open', async () => {
   });
 
   console.log('users seeded');
+
+  const restaurants = await Restaurant.insertMany([
+    // restaurant data here
+  ]);
+
+  console.log('Restaurants seeded');
+
+  const foodTrucks = await FoodTruck.insertMany([
+    //  food truck data here
+  ]);
+
+  console.log('Food Trucks seeded');
+
+  const hiddenGems = await HiddenGem.insertMany([
+    //  hidden gem data here
+  ]);
+
+  console.log('Hidden Gems seeded');
 
   process.exit();
 });
