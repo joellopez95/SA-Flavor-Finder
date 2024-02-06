@@ -46,7 +46,6 @@ db.once('open', async () => {
     {
       name: 'The Box Street Social',
       category: categories[0]._id,
-      // Add description
       description:'Start your day with coffee & donuts or END IT WITH A NIGHTCAP. Toast TO special moments with a glass of bubbleS or have Box Street all to yourself as a private event space.',
       image: 'BoxStreet.png',
       WebSite: 'https://boxstallday.com/',
@@ -55,7 +54,6 @@ db.once('open', async () => {
     {
       name: 'The Art of Donut',
       category: categories[0]._id,
-      // Add description
       description:'fresh handmade donuts, hot coffee, excellent service and comfortable environment. Our hearts and souls are dedicated to baking and serving in order to create a flavor that will leave everyone craving more.',
       image: 'artOfDonut.png',
       WebSite: 'https://www.artofdonut.com/',
@@ -73,7 +71,6 @@ db.once('open', async () => {
     {
       name: 'Masshole',
       category: categories[1]._id,
-      // Add description
       description:'in San Antonio, Texas, is a local gem renowned for its delicious lobster rolls and New England flavors.',
       image: 'Masshole.jpg',
       WebSite: 'www.yelp.com/biz/masshole-lobster-truck-san-antonio?hrid=1XeM1k9qckMtzmyCrQg9NA',
@@ -160,6 +157,7 @@ db.once('open', async () => {
       WebSite: 'https://naturalbridgecaverns.com/',
       location:'26495 Natural Bridge Caverns Rd, San Antonio, TX 78266'
     },
+    
   ]);
 
   console.log('products seeded');
@@ -169,11 +167,28 @@ db.once('open', async () => {
     lastName: 'Strickland',
     email: 'anthony@AOLOnline.com',
     password: 'password12345',
-    orders: [
-      {
-        products: [products[0]._id, products[0]._id, products[1]._id]
-      }
-    ]
+    admin: true,    
+  });
+  await User.create({
+    firstName: 'Maribel',
+    lastName: 'Calvario',
+    email: 'mari@AOLOnline.com',
+    password: 'password12345',
+    admin: true,    
+  });
+  await User.create({
+    firstName: 'Sebastian',
+    lastName: 'Hoang',
+    email: 'sebastian@AOLOnline.com',
+    password: 'password12345',
+    admin: true,    
+  });
+  await User.create({
+    firstName: 'Joel',
+    lastName: 'Lopez',
+    email: 'joel@AOLOnline.com',
+    password: 'password12345',
+    admin: true,    
   });
 
   await User.create({
