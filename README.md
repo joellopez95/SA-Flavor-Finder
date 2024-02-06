@@ -37,6 +37,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     `    ![alt text](assets/images/screenshot.png) -->
 
 ## Credits
+Collaborators:
 
 https://github.com/AnthonyStrickland - Anthony Strickland
 
