@@ -10,6 +10,7 @@ import { setContext } from '@apollo/client/link/context';
 import Nav from './components/Nav';
 import { StoreProvider } from './utils/GlobalState';
 
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -29,15 +30,36 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
+
 function App() {
   return (
+    
+<div className="App">
+
+
+
     <ApolloProvider client={client}>
       <StoreProvider>
         <Nav />
+        <center>
+    <div style={{
+      width: '1200px',
+      height: '600px',
+      margin: '0px',
+      backgroundSize: 'cover', 
+      backgroundImage: 'url("images/banner.webp")'
+      }}>
+</div>
+</center>
         <Outlet />
       </StoreProvider>
     </ApolloProvider>
+    </div>
+
+    
   );
 }
+
 
 export default App;
