@@ -50,5 +50,8 @@ type Mutation {
   addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
   updateUser(firstName: String, lastName: String, email: String, password: String): User
   login(email: String!, password: String!): Auth
+  addRestaurant(name: String!, description: String!, image: String, website: String, location: String!, categoryId: ID!): Restaurant
+  addFoodTruck(name: String!, description: String!, image: String, website: String, location: String!, categoryId: ID!): FoodTruck
+  addHiddenGem(name: String!, description: String!, image: String, website: String, location: String!, categoryId: ID!): HiddenGem
 }`;
 module.exports = typeDefs;
