@@ -13,7 +13,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
 });
-
+app.set(`trust proxy`, true)
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async () => {
   await server.start();
