@@ -14,11 +14,11 @@ The SA Flavor Finder is a simple website that allows tourist to find sites, rest
 - “Community Events” happening in San Antonio with users able to add events when logged in
 - Fun facts about San Antonio under the header
 - Events are moderated by a staff team to ensure quality of event postings
-- Interactive questionaire to assist in finding what would be most enjoyable for the end users
+- Interactive questionaire to assist in finding what would be most enjoyable for the end user
  
 
 
-## Installation
+## Installations
 
 As a web based application installation of the app is not necessary, please use the link below.
 
@@ -28,7 +28,7 @@ If you would like to use the code as a reference the repositroy is linked below.
 
 Repository: https://github.com/joellopez95/SA-Flavor-Finder
 
-## Usage
+## Usages
 
 <!-- Provide instructions and examples for use. Include screenshots as needed.
 
@@ -37,6 +37,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     `    ![alt text](assets/images/screenshot.png) -->
 
 ## Credits
+Collaborators:
 
 https://github.com/AnthonyStrickland - Anthony Strickland
 
