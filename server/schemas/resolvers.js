@@ -17,6 +17,41 @@ user: async (parent, args, context) => {
     return user;
   }
 
+        return user;
+      }
+      throw new AuthenticationError('Not logged in');
+    },
+  
+   },
+  Mutation: {
+    addUser: async (parent, args) => {
+      const user = await User.create(args);
+      const token = signToken(user);
+
+      return { token, user };
+    },
+   
+    updateUser: async (parent, args, context) => {
+      if (context.user) {
+        return await User.findByIdAndUpdate(context.user._id, args, { new: true });
+      }
+
+      throw AuthenticationError;
+    },
+
+    login: async (parent, { email, password }) => {
+      const user = await User.findOne({ email });
+
+      if (!user) {
+        throw AuthenticationError;
+      }
+
+      const correctPw = await user.isCorrectPassword(password);
+
+      if (!correctPw) {
+        throw AuthenticationError;
+      }
+
 throw AuthenticationError;
 }
 },
@@ -36,11 +71,26 @@ Mutation: {
     throw AuthenticationError;
   },
 
+
 login: async (parent, { email, password }) => {
   const user = await User.findOne({ email });
 
+      return { token, user };
+    },
+        // Mutations for adding Restaurant, FoodTruck, and HiddenGem
+    // addRestaurant: async (parent, args) => {
+    //   return await Restaurant.create(args);
+    // },
+    // addFoodTruck: async (parent, args) => {
+    //   return await FoodTruck.create(args);
+    // },
+    // addHiddenGem: async (parent, args) => {
+    //   return await HiddenGem.create(args);
+    // },
+
   if (!user) {
     throw AuthenticationError;
+
   }
   const correctPw = await user.isCorrectPassword(password);
   if (!correctPw) {
@@ -51,4 +101,8 @@ login: async (parent, { email, password }) => {
 }
 }
 };
+
+
 module.exports = resolvers;
+
+
