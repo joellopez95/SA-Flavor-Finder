@@ -1,4 +1,4 @@
-const { User, Category} = require('../models');
+const { User, Category, Restaurant, FoodTruck, HiddenGem } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 const resolvers = {
@@ -98,6 +98,53 @@ login: async (parent, { email, password }) => {
   }
   const token = signToken(user);
   return { token, user };
+},
+addRestaurant: async (_, { name, description, image, website, location, categoryId }) => {
+  try {
+    const newRestaurant = await Restaurant.create({
+      name,
+      description,
+      image,
+      website,
+      location,
+      category: categoryId 
+    });
+    return newRestaurant;
+  } catch (error) {
+    throw new Error('Error adding restaurant');
+  }
+},
+
+addFoodTruck: async (_, { name, description, image, website, location, categoryId }) => {
+  try {
+    const newFoodTruck = await FoodTruck.create({
+      name,
+      description,
+      image,
+      website,
+      location,
+      category: categoryId 
+    });
+    return newFoodTruck;
+  } catch (error) {
+    throw new Error('Error adding food truck');
+  }
+},
+
+addHiddenGem: async (_, { name, description, image, website, location, categoryId }) => {
+  try {
+    const newHiddenGem = await HiddenGem.create({
+      name,
+      description,
+      image,
+      website,
+      location,
+      category: categoryId 
+    });
+    return newHiddenGem;
+  } catch (error) {
+    throw new Error('Error adding hidden gem');
+  }
 }
 }
 };

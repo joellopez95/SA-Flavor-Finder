@@ -14,7 +14,7 @@ The SA Flavor Finder is a simple website that allows tourist to find sites, rest
 - “Community Events” happening in San Antonio with users able to add events when logged in
 - Fun facts about San Antonio under the header
 - Events are moderated by a staff team to ensure quality of event postings
-- Interactive questionaire to assist in finding what would be most enjoyable for the end users
+- Interactive questionaire to assist in finding what would be most enjoyable for the end user
  
 
 
