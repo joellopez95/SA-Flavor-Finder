@@ -18,7 +18,7 @@ The SA Flavor Finder is a simple website that allows tourist to find sites, rest
  
 
 
-## Installation
+## Installations
 
 As a web based application installation of the app is not necessary, please use the link below.
 
@@ -28,7 +28,7 @@ If you would like to use the code as a reference the repositroy is linked below.
 
 Repository: https://github.com/joellopez95/SA-Flavor-Finder
 
-## Usage
+## Usages
 
 <!-- Provide instructions and examples for use. Include screenshots as needed.
 
