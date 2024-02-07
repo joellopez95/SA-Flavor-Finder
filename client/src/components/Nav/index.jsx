@@ -9,7 +9,7 @@ function Nav() {
         <ul className="flex-row">
           <li className="mx-1">
             <Link to="/orderHistory">
-              Order History
+              Browsing History
             </Link>
           </li>
           <li className="mx-1">
@@ -22,6 +22,7 @@ function Nav() {
       );
     } else {
       return (
+        
         <ul className="flex-row">
           <li className="mx-1">
             <Link to="/signup">
@@ -34,6 +35,7 @@ function Nav() {
             </Link>
           </li>
         </ul>
+      
       );
     }
   }
@@ -42,8 +44,8 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
-          SA Flavor Finder
+          <span role="img" aria-label="client/public/images/Alamo.jpg"></span>
+          🍕SA Flavor Finder
         </Link>
       </h1>
 
