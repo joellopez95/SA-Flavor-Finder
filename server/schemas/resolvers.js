@@ -35,19 +35,10 @@ const resolvers = {
 
         return user;
       }
-
       throw new AuthenticationError('Not logged in');
     },
-    restaurants: async () => {
-      return await Restaurant.find();
-    },
-    foodTrucks: async () => {
-      return await FoodTruck.find();
-    },
-    hiddenGems: async () => {
-      return await HiddenGem.find();
-    },
-  },
+  
+   },
   Mutation: {
     addUser: async (parent, args) => {
       const user = await User.create(args);
@@ -55,41 +46,44 @@ const resolvers = {
 
       return { token, user };
     },
+   
     updateUser: async (parent, args, context) => {
       if (context.user) {
         return await User.findByIdAndUpdate(context.user._id, args, { new: true });
       }
 
-      throw new AuthenticationError('Not logged in');
+      throw AuthenticationError;
     },
+
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 
       if (!user) {
-        throw new AuthenticationError('Incorrect email or password');
+        throw AuthenticationError;
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError('Incorrect email or password');
+        throw AuthenticationError;
       }
 
       const token = signToken(user);
 
       return { token, user };
     },
-    // Mutations for adding Restaurant, FoodTruck, and HiddenGem
-    addRestaurant: async (parent, args) => {
-      return await Restaurant.create(args);
-    },
-    addFoodTruck: async (parent, args) => {
-      return await FoodTruck.create(args);
-    },
-    addHiddenGem: async (parent, args) => {
-      return await HiddenGem.create(args);
-    },
+        // Mutations for adding Restaurant, FoodTruck, and HiddenGem
+    // addRestaurant: async (parent, args) => {
+    //   return await Restaurant.create(args);
+    // },
+    // addFoodTruck: async (parent, args) => {
+    //   return await FoodTruck.create(args);
+    // },
+    // addHiddenGem: async (parent, args) => {
+    //   return await HiddenGem.create(args);
+    // },
   }
 };
 
 module.exports = resolvers;
+
