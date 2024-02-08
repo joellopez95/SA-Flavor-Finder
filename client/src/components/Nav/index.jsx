@@ -6,13 +6,32 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/orderHistory">
-              Browsing History
+        <ul className="us">
+          <li><a href="https://github.com/AnthonyStrickland?tab=repositories">Anthony Strickland</a></li>
+          <li><a href="https://github.com/MCalvario?tab=repositories">Maribel Calvario</a></li>
+          <li><a href="https://github.com/joellopez95?tab=repositories">Joel Lopez</a></li>
+          <li><a href="https://github.com/SHoang6702">Sebastian Hoang</a></li>
+          {/* <li className="mx-4">
+            <Link to="/Anthony">
+              Anthony Strickland
             </Link>
           </li>
-          <li className="mx-1">
+          <li className="mx-4">
+            <Link to="/Maribel">
+              Maribel Calvario
+            </Link>
+          </li>
+          <li className="mx-4">
+            <Link to="/Joel">
+              Joel Lopez
+            </Link>
+          </li>
+          <li className="mx-4">
+            <Link to="/Sebastian">
+              Sebastian Hoang
+            </Link>
+          </li> */}
+          <li className="mx-3">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
               Logout
