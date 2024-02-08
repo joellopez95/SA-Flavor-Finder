@@ -29,8 +29,23 @@ function Login(props) {
     });
   };
 
+  const myStyle = {
+    backgroundImage: "url('images/banner.webp')",
+    height: "100vh",
+          marginTop: "10px",
+          fontSize: "50px",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+  };
+
   return (
     <div className="container my-1">
+
+<div style={myStyle}>
+                <h1><strong> Welcome to SA Flavor Finder! </strong></h1>
+                <h2><strong><span className="dis">Disc</span>over The Best Local <span className="in">Dining Spots For An Authentic</span> Expe<span className="rie">rie</span>nce...</strong></h2>
+            </div>
+
       <Link to="/signup">← Go to Signup</Link>
 
       <h2>Login</h2>
