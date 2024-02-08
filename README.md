@@ -28,6 +28,8 @@ If you would like to use the code as a reference the repositroy is linked below.
 
 Repository: https://github.com/joellopez95/SA-Flavor-Finder
 
+Deployed Application: https://sa-flavor-finder-6aib.onrender.com/signup
+
 ## Usages
 
 <!-- Provide instructions and examples for use. Include screenshots as needed.
