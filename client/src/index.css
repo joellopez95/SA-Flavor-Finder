@@ -58,8 +58,7 @@ h2 {
   font-size: 20px;
   text-decoration-line: overline;
   text-decoration-color: black;
-  tex 7px;t-decoration-thickness:
-  background-color: black;
+  text-decoration-thickness: 2px;
   text-align: center;
   color: black
 }
@@ -78,7 +77,7 @@ h2 {
 
 ul {
   list-style-type: none;
-}
+  }
 
 h3 {
   font-size: 1.75rem;
@@ -179,10 +178,14 @@ input:focus {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 20px 0px 0px;
 }
+
 ul li{
   margin-right:25px;
 }
+
 .us {
 display: inline-flex;
 flex-wrap: wrap;

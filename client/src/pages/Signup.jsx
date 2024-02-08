@@ -5,6 +5,7 @@ import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 
 
+     
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -48,11 +49,16 @@ function Signup(props) {
     <div className="container my-1">
       <div style={myStyle}>
                 <h1><strong> Welcome to SA Flavor Finder! </strong></h1>
-                <h2><strong><span className="dis"Dis>Disc</span>over The Best Local <span className="in">Dining Spots For An Authentic</span> Expe<span className="rie">rie</span>nce...</strong></h2>
+                <h2><strong><span className="dis">Disc</span>over The Best Local <span className="in">Dining Spots For An Authentic</span> Expe<span className="rie">rie</span>nce...</strong></h2>
             </div>
+
+
+       
+        
+
       <Link to="/login">← Go to Login</Link>
 
-      
+     
 
       <h3>Signup</h3>
       <form onSubmit={handleFormSubmit}>
