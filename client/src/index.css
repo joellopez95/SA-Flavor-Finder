@@ -1,11 +1,18 @@
 :root {
+  /* navbar background-color */
   --primary: rgb(8, 8, 8);
-  --secondary: black;
+  --secondary: rgb(13, 14, 13);
+  /* Go to login */
   --tertiary: rgb(182, 5, 5);
-  --light: white;
-  --dark: black;
+  /* title */
+  --light: rgb(255, 255, 255);
+  /* Welcome to SAFlavorFiner, subheading, signup*/
+  --dark: white;
+  /* error message */
   --error: red;
+  /* space between navbar and pic */
   --spacing-one: calc(1rem * .5);
+  /* space between signup input boxes */
   --spacing-two: calc(1rem);
 }
 
@@ -43,10 +50,30 @@ h6 {
 
 h1 {
   font-size: 2.50rem;
+  
+  background-color: black;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 20px;
+  text-decoration-line: overline;
+  text-decoration-color: black;
+  tex 7px;t-decoration-thickness:
+  background-color: black;
+  text-align: center;
+  color: black
+}
+
+.dis {
+  color: black;
+}
+
+.in {
+  color: rgb(255, 4, 4); 
+}
+
+.rie {
+  color: black;
 }
 
 ul {
@@ -232,6 +259,8 @@ margin-right: 500px;
 .error-text {
   color: var(--error);
 }
+
+
 
 @media screen and (max-width: 768px) {
   .card {

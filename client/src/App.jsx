@@ -42,16 +42,7 @@ function App() {
     <ApolloProvider client={client}>
       <StoreProvider>
         <Nav />
-        <center>
-    <div style={{
-      width: '1200px',
-      height: '600px',
-      margin: '0px',
-      backgroundSize: 'cover', 
-      backgroundImage: 'url("images/banner.webp")'
-      }}>
-</div>
-</center>
+        
         <Outlet />
       </StoreProvider>
     </ApolloProvider>
