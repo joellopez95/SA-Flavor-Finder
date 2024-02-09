@@ -1,13 +1,13 @@
 :root {
   /* navbar background-color */
-  --primary: rgb(8, 8, 8);
-  --secondary: rgb(13, 14, 13);
+  --primary: black;
+  --secondary: black;
   /* Go to login */
-  --tertiary: rgb(182, 5, 5);
+  --tertiary: rgb(15, 15, 15);
   /* title */
   --light: rgb(255, 255, 255);
   /* Welcome to SAFlavorFiner, subheading, signup*/
-  --dark: white;
+  --dark: rgb(251, 245, 245);
   /* error message */
   --error: red;
   /* space between navbar and pic */
@@ -54,17 +54,18 @@ h1 {
   background-color: black;
 }
 
+/* heading discover */
 h2 {
   font-size: 20px;
   text-decoration-line: overline;
   text-decoration-color: black;
   text-decoration-thickness: 2px;
   text-align: center;
-  color: black
+  color:white;
 }
 
-.dis {
-  color: black;
+/* .dis {
+  color: white;
 }
 
 .in {
@@ -72,15 +73,17 @@ h2 {
 }
 
 .rie {
-  color: black;
-}
+  color: white;
+} */
 
 ul {
   list-style-type: none;
   }
 
+/* signup */
 h3 {
   font-size: 1.75rem;
+  color: red;
 }
 
 h4 {
@@ -154,13 +157,14 @@ form {
   width: 40%;
 }
 
+/* input boxes */
 input {
   font-size: 1rem;
-  padding: 0.25rem;
-  border: 1px solid var(--dark);
-  outline: none;
+  padding: .25rem;
+  border: 1px unset red;
   border-radius: 3px;
   transition: box-shadow 0.2s;
+  background-color: black;
 }
 
 input:focus {
@@ -216,11 +220,11 @@ margin-right: 500px;
   top: 10px;
   right: 10px;
 }
+
 .mx-4 {
   margin-top: 50px;
   margin-right: 200px;
   margin-left: -100px;
-  
 }
 
 .my-1 {
@@ -231,7 +235,8 @@ margin-right: 500px;
 .my-2 {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
-  color: white;
+  color: black;
+  font-size: 20px;
 }
 
 .px-1 {
