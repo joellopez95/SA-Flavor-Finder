@@ -4,14 +4,24 @@ import './FoodTrucks.css'; // Import your styles
 const trucks = () => {
   const foodtrucks = [
     {
-      title: 'Area 51, Food Park',
-      image: '../public/images/Area51.png',
-      websiteLink: 'https://www.facebook.com/area51foodpark/',
+      title: 'Tacos El Regio',
+      image: '../public/images/TacosElRegio.png',
+      websiteLink: 'https://www.tacoselregiosatx.com/',
     },
     {
       title: 'Masshole, Lobster Truck',
       image: '../public/images/Masshole.png',
       websiteLink: 'https://massholelobstertruck.com/',
+    },
+    {
+      title: 'Area 51, Food Park',
+      image: '../public/images/Area51.png',
+      websiteLink: 'https://www.facebook.com/area51foodpark/',
+    },
+    {
+      title: 'RJ Indian Street Food',
+      image: '../public/images/',
+      websiteLink: 'https://www.yelp.com/biz/rj-indian-street-food-san-antonio',
     },
   ];
 
