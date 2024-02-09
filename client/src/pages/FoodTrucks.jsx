@@ -1,63 +1,44 @@
 import React from 'react';
 import './FoodTrucks.css'; // Import your styles
 
-const Portfolio = () => {
-  const projects = [
+const trucks = () => {
+  const foodtrucks = [
     {
-      title: 'Weather Wise',
-      image: '/assets/weather-wise.png',
-      deployedLink: 'https://joellopez95.github.io/Weather-Wise/',
-      githubLink: 'https://github.com/joellopez95/Weather-Wise',
+      title: 'Tacos El Regio',
+      image: '../public/images/TacosElRegio.png',
+      websiteLink: 'https://www.tacoselregiosatx.com/',
     },
     {
-      title: 'SA-Flavor-Finder',
-      image: '/assets/SA-Flavor.png',
-      deployedLink: 'https://joellopez95.github.io/SA-Flavor-Finder/',
-      githubLink: 'https://github.com/joellopez95/SA-Flavor-Finder',
+      title: 'Masshole, Lobster Truck',
+      image: '../public/images/Masshole.png',
+      websiteLink: 'https://massholelobstertruck.com/',
     },
     {
-      title: 'Employee-Tracker-App',
-      image: '/assets/EmployeeTrack.png',
-      deployedLink:'https://github.com/joellopez95/Employee-Tracker-App',
-      githubLink: 'https://github.com/joellopez95/Employee-Tracker-App'
+      title: 'Area 51, Food Park',
+      image: '../public/images/Area51.png',
+      websiteLink: 'https://www.facebook.com/area51foodpark/',
     },
     {
-      title: 'SocialNoSQL-API',
-      image: '/assets/NoSQL.png',
-      deployedLink: 'https://app.screencastify.com/v3/watch/7NRedju1pgdJMrAZgiix',
-      githubLink: 'https://github.com/joellopez95/SocialNoSQL-API',
-    },
-    {
-      title: 'PWA-Text-Editor',
-      image: '/assets/JATE.png',
-      deployedLink: 'https://example.com/project5',
-      githubLink: 'https://github.com/joellopez95/Progressive-Web-Applications-PWA-Text-Editor',
-    },
-    {
-      title: 'Bite-Bits',
-      image: '/assets/bitebits.png',
-      deployedLink: 'https://bitebits0830-78de9fe35f6a.herokuapp.com/',
-      githubLink: 'https://github.com/codyleight/DishDash',
+      title: 'RJ Indian Street Food',
+      image: '../public/images/',
+      websiteLink: 'https://www.yelp.com/biz/rj-indian-street-food-san-antonio',
     },
   ];
 
   return (
-    <section className="portfolio-section">
-      <div className="portfolio-content">
+    <section className="trucks-section">
+      <div className="trucks-content">
       <h2>Food Trucks! 🚚 </h2>
 
-        <div className="projects-container">
-          {projects.map((project, index) => (
-            <div className="project-card" key={index}>
-              <img src={project.image} alt={`${project.title} Screenshot`} />
-              <div className="project-info">
-                <h3>{project.title}</h3>
-                <div className="project-links">
-                  <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">
-                    Deployed App
-                  </a>
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    GitHub Repository
+        <div className="foodtruck-container">
+          {foodtrucks.map((foodtruck, index) => (
+            <div className="foodtruck-card" key={index}>
+              <img src={foodtruck.image} alt={`${foodtruck.title} Screenshot`} />
+              <div className="foodtruck-info">
+                <h3>{foodtruck.title}</h3>
+                <div className="foodtruck-links">
+                  <a href={foodtruck.websiteLink} target="_blank" rel="noopener noreferrer">
+                    Website
                   </a>
                 </div>
               </div>
@@ -69,4 +50,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default trucks;

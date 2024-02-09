@@ -11,8 +11,8 @@ The SA Flavor Finder is a simple website that allows tourist to find sites, rest
 - About us page
 - Fun page with images and videos of locations around San Antonio
 - Information regarding hidden gems, food, and foodtrucks in San Antonio with links
-- “Community Events” happening in San Antonio with users able to add events when logged in
-- Fun facts about San Antonio under the header
+- "Community Suggestions" to make suggestions for curators to add to the website
+- Fun facts about San Antonio
 - Events are moderated by a staff team to ensure quality of event postings
 - Interactive questionaire to assist in finding what would be most enjoyable for the end user
  
@@ -31,12 +31,9 @@ Repository: https://github.com/joellopez95/SA-Flavor-Finder
 Deployed Application: https://sa-flavor-finder-6aib.onrender.com/signup
 
 ## Usages
+Signup to the website or log in if you already have an account to view entries
 
-<!-- Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    `    ![alt text](assets/images/screenshot.png) -->
+![alt text](assets/images/signup.png)
 
 ## Credits
 Collaborators:
