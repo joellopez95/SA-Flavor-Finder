@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HiddenGem from './pages/HiddenGem.jsx';
+import FoodTrucks from './pages/FoodTrucks.jsx';
+import Restaurant from './pages/Restaurant.jsx';
 import App from './App.jsx';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
       {
         path: '/hiddenGem',
         element: <HiddenGem />
+      },
+      {
+        path: '/foodTrucks',
+        element: <FoodTrucks />
+      },
+      {
+        path: '/restaurants',
+        element: <Restaurant />
       }
     ]
   }
