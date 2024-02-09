@@ -1,16 +1,16 @@
-/* Portfolio.css */
+/* Restaurant.css */
 
-.portfolio-section {
+.Restaurant-section {
   padding: 20px;
   text-align: center;
 }
 
-.portfolio-content {
+.Restaurant-content {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.projects-container {
+.Restaurant-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
