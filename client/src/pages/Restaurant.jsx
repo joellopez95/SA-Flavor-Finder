@@ -5,7 +5,7 @@ const restaurant = () => {
   const projects = [
     {
       title: 'La Panaderia',
-      image: '/public/images/la-panadaeria.jpg',
+      image: '/public/images/la-panaderia.jpg',
       deployedLink: 'https://twitter.com/breadcultura',
     },
     {

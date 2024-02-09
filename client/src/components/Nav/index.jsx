@@ -7,10 +7,10 @@ function Nav() {
     if (Auth.loggedIn()) {
       return (
         <ul className="us">
-          <li><a href="https://github.com/AnthonyStrickland?tab=repositories">Anthony Strickland</a></li>
+          {/* <li><a href="https://github.com/AnthonyStrickland?tab=repositories">Anthony Strickland</a></li>
           <li><a href="https://github.com/MCalvario?tab=repositories">Maribel Calvario</a></li>
           <li><a href="https://github.com/joellopez95?tab=repositories">Joel Lopez</a></li>
-          <li><a href="https://github.com/SHoang6702">Sebastian Hoang</a></li>
+          <li><a href="https://github.com/SHoang6702">Sebastian Hoang</a></li> */}
           <li className="mx-3">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
