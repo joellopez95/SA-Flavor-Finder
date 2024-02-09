@@ -10,17 +10,17 @@ const trucks = () => {
     },
     {
       title: 'Masshole, Lobster Truck',
-      image: '../public/images/Masshole.png',
+      image: '../public/images/Masshole.jpg',
       websiteLink: 'https://massholelobstertruck.com/',
     },
     {
       title: 'Area 51, Food Park',
-      image: '../public/images/Area51.png',
+      image: '../public/images/Area51.jpg',
       websiteLink: 'https://www.facebook.com/area51foodpark/',
     },
     {
       title: 'RJ Indian Street Food',
-      image: '../public/images/',
+      image: '../public/images/RjIndian.jpg',
       websiteLink: 'https://www.yelp.com/biz/rj-indian-street-food-san-antonio',
     },
   ];
