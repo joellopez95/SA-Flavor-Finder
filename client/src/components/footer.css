@@ -1,0 +1,48 @@
+.us {
+    color: white;
+    font-size: 30px;
+    ;
+  }
+
+a {
+    color: red;
+    letter-spacing: 1px;
+    padding: 0px 10px;
+  }
+
+a:hover { color: red; }
+  
+.fa-twitter {
+    color: white; 
+    font-size: 15px;
+    padding: 0px 10px;
+}
+
+ /*hover over twitter*/
+.fa-twitter:hover {
+  color: red;
+}
+
+.fa-facebook {
+    color: white; 
+    font-size: 15px;
+    padding: 0px 10px;
+}
+
+ /*hover over twitter*/
+.fa-facebook:hover {
+  color: red;
+}
+  
+.fa-github {
+    color: white; 
+    font-size: 15px;
+    padding: 0px 10px;
+}
+
+ /*hover over twitter*/
+.fa-github:hover {
+  color: red;
+}
+  
+  
