@@ -1,0 +1,52 @@
+/* Restaurant.css */
+
+.Restaurant-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.Restaurant-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-card {
+  margin: 20px;
+  max-width: calc(33.33% - 40px); /* Adjusted width to fit 3 cards in a row with spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-info h3 {
+  margin-top: 0;
+}
+
+.project-links a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover 
