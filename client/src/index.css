@@ -163,13 +163,13 @@ form {
 
 /* input boxes */
 input {
-  color: red;
+  color: black;
   font-size: 1rem;
   padding: .25rem;
   border: 1px unset red;
   border-radius: 3px;
   transition: box-shadow 0.2s;
-  background-color: black;
+  background-color: white;
 }
 
 .firstName {
@@ -180,6 +180,8 @@ input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 .25rem red;
 }
+
+
 
 .container {
   width: 85%;
@@ -276,7 +278,15 @@ height: 50px;
   color: var(--error);
 }
 
+/* go to login at bottom of page */
+.login {
+  color: black;
+}
 
+/* go to signup at bottom of page */
+.signup {
+  color: black;
+}
 
 @media screen and (max-width: 768px) {
   .card {

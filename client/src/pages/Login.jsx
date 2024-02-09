@@ -31,27 +31,29 @@ function Login(props) {
 
   const myStyle = {
     backgroundImage: "url('images/banner.webp')",
-    height: "100vh",
+    // height: "100vh",
           marginTop: "10px",
-          fontSize: "50px",
-          backgroundSize: "cover",
+          marginRight: "-170px",
+          marginLeft: "-170px",
+          fontSize: "40px",
+          backgroundSize: "2000px",
           backgroundRepeat: "no-repeat",
   };
 
   return (
     <div className="container my-1">
-
-<div style={myStyle}>
+      <center>
                 <h1><strong> Welcome to SA Flavor Finder! </strong></h1>
-                <h2><strong><span className="dis">Disc</span>over The Best Local <span className="in">Dining Spots For An Authentic</span> Expe<span className="rie">rie</span>nce...</strong></h2>
-            </div>
-
-      <Link to="/signup">← Go to Signup</Link>
-
-      <h2>Login</h2>
+                {/* <h2><strong><span className="dis">Disc</span>over The Best Local <span className="in">Dining Spots For An Authentic</span> Expe<span className="rie">rie</span>nce...</strong></h2> */}
+                <h2>Discover The Best Local Dining Spots For An Authentic Experience...</h2>
+      </center>
+      <div style={myStyle}>
+<br></br>
+<center>
+      <h3><strong>Login</strong></h3><br></br>
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email address:</label>
+          <label htmlFor="email"><strong>Email address:</strong></label>
           <input
             placeholder="youremail@test.com"
             name="email"
@@ -61,7 +63,7 @@ function Login(props) {
           />
         </div>
         <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
+          <label htmlFor="pwd"><strong>Password:</strong></label>
           <input
             placeholder="******"
             name="password"
@@ -79,6 +81,10 @@ function Login(props) {
           <button type="submit">Submit</button>
         </div>
       </form>
+      </center>
+      <br></br>
+      <Link className="signup" to="/signup">← Go to Signup</Link>
+    </div>
     </div>
   );
 }
