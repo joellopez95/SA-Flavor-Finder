@@ -5,28 +5,28 @@ const restaurant = () => {
   const projects = [
     {
       title: 'La Panaderia',
-      image: '/public/images/LaPanaderia.png',
-      deployedLink: 'https://joellopez95.github.io/Weather-Wise/',
+      image: '/public/images/la-panadaeria.jpg',
+      deployedLink: 'https://twitter.com/breadcultura',
     },
     {
       title: 'Curry Boys BBQ',
-      image: '/public/images/CurryBoys.png',
-      deployedLink: 'https://joellopez95.github.io/SA-Flavor-Finder/',
+      image: '/public/images/curry-boys-bbq.webp',
+      deployedLink: 'https://www.yelp.com/biz/curry-boys-bbq-san-antonio-2',
     },
     {
       title: 'Zaatar Lebanese Restaurant',
-      image: '/public/images/Zaatar.png',
-      deployedLink:'https://github.com/joellopez95/Employee-Tracker-App',
+      image: '/public/images/Zaatar.jpeg',
+      deployedLink:'https://www.yelp.com/biz/zaatar-lebanese-grill-san-antonio',
     },
     {
       title: 'Simis Indian Cuisine',
-      image: '/public/images/Simis.png',
-      deployedLink: 'https://app.screencastify.com/v3/watch/7NRedju1pgdJMrAZgiix',
+      image: '/public/images/simis.jpg',
+      deployedLink: 'https://www.yelp.com/biz/simis-india-cuisine-san-antonio',
     },
     {
       title: 'Pollos Asados Los Nortenos',
-      image: '/public/images/PollosAsados.png',
-      deployedLink: 'https://example.com/project5',
+      image: '/public/images/pollos.jpg',
+      deployedLink: 'https://www.yelp.com/biz/pollos-asados-los-norte%C3%B1os-san-antonio',
     },
   ];
 
