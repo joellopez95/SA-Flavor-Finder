@@ -55,13 +55,10 @@ function Signup(props) {
       <h2>Discover The Best Local Dining Spots For An Authentic Experience...</h2>
       </center>
       <div style={myStyle}>
-       
-    
-       
         <br></br>
         
 <center>
-        <h3>Signup</h3>
+        <h3><strong>Signup</strong></h3><br></br>
         <form onSubmit={handleFormSubmit}>
           <div className="flex-row space-between my-2">
             <label htmlFor="firstName"><strong>First Name:</strong></label>
@@ -109,7 +106,7 @@ function Signup(props) {
           <br></br>
         </form>
         </center>
-        <Link to="/login">← Go to Login</Link>
+        <Link className="login" to="/login" to="/login">← Go to Login</Link>
       </div>
     </div>
   );
