@@ -1,50 +1,39 @@
 import React from 'react';
 import './Restaurant.css'; // Import your styles
 
-const Portfolio = () => {
+const restaurant = () => {
   const projects = [
     {
-      title: 'Weather Wise',
-      image: '/assets/weather-wise.png',
+      title: 'La Panaderia',
+      image: '/public/images/LaPanaderia.png',
       deployedLink: 'https://joellopez95.github.io/Weather-Wise/',
-      githubLink: 'https://github.com/joellopez95/Weather-Wise',
     },
     {
-      title: 'SA-Flavor-Finder',
-      image: '/assets/SA-Flavor.png',
+      title: 'Curry Boys BBQ',
+      image: '/public/images/CurryBoys.png',
       deployedLink: 'https://joellopez95.github.io/SA-Flavor-Finder/',
-      githubLink: 'https://github.com/joellopez95/SA-Flavor-Finder',
     },
     {
-      title: 'Employee-Tracker-App',
-      image: '/assets/EmployeeTrack.png',
+      title: 'Zaatar Lebanese Restaurant',
+      image: '/public/images/Zaatar.png',
       deployedLink:'https://github.com/joellopez95/Employee-Tracker-App',
-      githubLink: 'https://github.com/joellopez95/Employee-Tracker-App'
     },
     {
-      title: 'SocialNoSQL-API',
-      image: '/assets/NoSQL.png',
+      title: 'Simis Indian Cuisine',
+      image: '/public/images/Simis.png',
       deployedLink: 'https://app.screencastify.com/v3/watch/7NRedju1pgdJMrAZgiix',
-      githubLink: 'https://github.com/joellopez95/SocialNoSQL-API',
     },
     {
-      title: 'PWA-Text-Editor',
-      image: '/assets/JATE.png',
+      title: 'Pollos Asados Los Nortenos',
+      image: '/public/images/PollosAsados.png',
       deployedLink: 'https://example.com/project5',
-      githubLink: 'https://github.com/joellopez95/Progressive-Web-Applications-PWA-Text-Editor',
-    },
-    {
-      title: 'Bite-Bits',
-      image: '/assets/bitebits.png',
-      deployedLink: 'https://bitebits0830-78de9fe35f6a.herokuapp.com/',
-      githubLink: 'https://github.com/codyleight/DishDash',
     },
   ];
 
   return (
     <section className="portfolio-section">
       <div className="portfolio-content">
-      <h2>My Portfolio 🚀</h2>
+      <h2>Restaurants 🍽️</h2>
 
         <div className="projects-container">
           {projects.map((project, index) => (
@@ -69,4 +58,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default restaurant;
