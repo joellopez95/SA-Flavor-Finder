@@ -38,7 +38,6 @@ function Signup(props) {
       backgroundImage: "url('images/banner.webp')",
       // height: "100vh",
       marginTop: "10px",
-      marginBottom: "20px",
       marginRight: "-170px",
       marginLeft: "-170px",
       fontSize: "40px",
@@ -50,9 +49,11 @@ function Signup(props) {
   return (
 
     <div className="container my-1">
+      <center>
       <h1><strong> Welcome to SA Flavor Finder! </strong></h1>
       {/* <h2><strong><span className="dis">Disc</span>over The Best Local <span className="in">Dining Spots For An Authentic</span> Expe<span className="rie">rie</span>nce...</strong></h2> */}
       <h2>Discover The Best Local Dining Spots For An Authentic Experience...</h2>
+      </center>
       <div style={myStyle}>
        
     
