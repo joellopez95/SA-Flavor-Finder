@@ -15,7 +15,7 @@ const restaurant = () => {
     },
     {
       title: 'Zaatar Lebanese Restaurant',
-      image: '/public/images/Zaatar.jpeg',
+      image: '/public/images/zaatar.png',
       deployedLink:'https://www.yelp.com/biz/zaatar-lebanese-grill-san-antonio',
     },
     {
@@ -31,8 +31,8 @@ const restaurant = () => {
   ];
 
   return (
-    <section className="portfolio-section">
-      <div className="portfolio-content">
+    <section className="Restaurant-section">
+      <div className="Restaurant-content">
       <h2>Restaurants 🍽️</h2>
 
         <div className="projects-container">
@@ -43,11 +43,9 @@ const restaurant = () => {
                 <h3>{project.title}</h3>
                 <div className="project-links">
                   <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">
-                    Deployed App
+                    Restaurant Website
                   </a>
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    GitHub Repository
-                  </a>
+                  
                 </div>
               </div>
             </div>

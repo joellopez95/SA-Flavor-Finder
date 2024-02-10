@@ -1,0 +1,21 @@
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Adjust the color as needed */
+  }
+  
+  .link-item {
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .icon-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
