@@ -38,7 +38,7 @@ const trucks = () => {
   return (
     <section className="trucks-section">
       <div className="trucks-content">
-      <h2>Food Trucks! 🚚 </h2>
+      <h1>Food Trucks! 🚚 </h1>
 
         <div className="trucks-container">
           {foodtrucks.map((foodtruck, index) => (

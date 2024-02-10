@@ -12,6 +12,10 @@
     display: flex;
     justify-content: space-around;
   }
+
+  .GemsCard {
+    color: black;
+  }
   
   @media screen and (max-width: 768px) {
     .icon-container {
