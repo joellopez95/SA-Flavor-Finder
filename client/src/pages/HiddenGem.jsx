@@ -5,33 +5,32 @@ const hiddenGem = () => {
   const projects = [
     {
       title: 'The Doseum',
-      image: 'Dosuem.png',
+      image: 'client/public/images/Doseum.png',
       deployedLink: 'https://www.thedoseum.org/',
-      githubLink: 'https://github.com/joellopez95/Weather-Wise',
     },
     {
       title: 'Yanaguana Garden at Hemisfair',
-      image: 'Hemisfair.png',
+      image: 'client/public/images/Hemisfair.png',
       deployedLink: 'https://hemisfair.org/play/',
     },
     {
       title: 'San Antonio Zoo',
-      image: 'Zoo.jpg',
+      image: 'client/public/images/Zoo.jpg',
       deployedLink:'https://sazoo.org/',
     },
     {
       title: 'The Alamo',
-      image: 'Alamo.jpg',
+      image: 'client/public/images/Alamo.jpg',
       deployedLink: 'https://www.thealamo.org/',
     },
     {
       title: 'Tree Haus Tavern',
-      image: 'treeHaus.jpg',
+      image: 'client/public/images/treeHaus.jpg',
       deployedLink: 'https://www.treehaustavern.com/gallery',
     },
     {
       title: 'San Antonio Museum of Art',
-      image: '/assets/bitebits.pngmuseum.jpg',
+      image: 'client/public/images/Museum.jpg',
       deployedLink: 'https://www.samuseum.org/',
 
     },

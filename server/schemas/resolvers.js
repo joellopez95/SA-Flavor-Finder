@@ -57,7 +57,6 @@ addRestaurant: async (_, { name, description, image, website, location, category
     throw new Error('Error adding restaurant');
   }
 },
-
 addFoodTruck: async (_, { name, description, image, website, location, categoryId }) => {
   try {
     const newFoodTruck = await FoodTruck.create({
