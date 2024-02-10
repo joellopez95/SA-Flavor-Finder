@@ -106,7 +106,7 @@ function Signup(props) {
           <br></br>
         </form>
         </center>
-        <Link className="login" to="/login" to="/login">← Go to Login</Link>
+        <Link className="login" to="/login" >← Go to Login</Link>
       </div>
     </div>
   );
