@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 
 const myStyle = {
   backgroundImage: "url('images/banner.webp')",
-  // height: "100vh",
   marginTop: "10px",
   marginRight: "-170px",
   marginLeft: "-170px",
@@ -22,17 +21,21 @@ const Home = () => {
         <center>
           <br />
           <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+
             <Link to="/hiddengem" className="link-item">
               <img className="image__img" src='/images/naturalbridge.jpg' height="300" width="370" alt="Hidden Gems" />
-              <p className="title">Hidden Gems</p>
+              <p className="GemsCard">Hidden Gems</p>
             </Link>
+
+          
             <Link to="/foodtrucks" className="link-item">
               <img className="image__img" src='/images/foodtruck.jpg' height="300" width="350" alt="Food Trucks" />
-              <p className="title">Food Trucks</p>
+              <p className="TruckCard">Food Trucks</p>
             </Link>
+
             <Link to="/restaurants" className="link-item">
               <img className="image__img" src='/images/simis.jpg' height="300" width="350" alt="Restaurants" />
-              <p className="title">Restaurants</p>
+              <p className="RestaurantCard">Restaurants</p>
             </Link>
           </div>
         </center>

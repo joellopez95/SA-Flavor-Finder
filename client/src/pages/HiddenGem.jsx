@@ -5,12 +5,12 @@ const hiddenGem = () => {
   const projects = [
     {
       title: 'The Doseum',
-      image: '/images/Doseum.png',
+      image: '/images/TheDoseum.jpg',
       deployedLink: 'https://www.thedoseum.org/',
     },
     {
       title: 'Yanaguana Garden at Hemisfair',
-      image: '/images/Hemisfair.png',
+      image: '/images/yanaguana-gardens.jpg',
       deployedLink: 'https://hemisfair.org/play/',
     },
     {
@@ -39,7 +39,7 @@ const hiddenGem = () => {
   return (
     <section className="portfolio-section">
       <div className="portfolio-content">
-      <h2>Hidden Gems 🚀</h2>
+      <h1>Hidden Gems 🚀</h1>
 
         <div className="projects-container">
           {projects.map((project, index) => (

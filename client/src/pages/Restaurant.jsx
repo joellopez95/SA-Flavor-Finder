@@ -33,7 +33,7 @@ const restaurant = () => {
   return (
     <section className="Restaurant-section">
       <div className="Restaurant-content">
-      <h2>Restaurants 🍽️</h2>
+      <h1>Restaurants 🍽️</h1>
 
         <div className="projects-container">
           {projects.map((project, index) => (
