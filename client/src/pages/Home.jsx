@@ -34,6 +34,10 @@ const Home = () => {
               <img className="image__img" src='/images/simis.jpg' height="300" width="350" alt="Restaurants" />
               <p className="title">Restaurants</p>
             </Link>
+            <Link to="/SanAntonio" className="link-item">
+              <img className="image__img" src='/images/Bluebonnet.jpg' height="300" width="350" alt="Restaurants" />
+              <p className="title">San Antonio</p>
+            </Link>
           </div>
         </center>
         <br />
