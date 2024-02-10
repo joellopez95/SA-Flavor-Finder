@@ -5,22 +5,22 @@ const trucks = () => {
   const foodtrucks = [
     {
       title: 'Tacos El Regio',
-      image: '../public/images/TacosElRegio.png',
+      image: '/images/TacosElRegio.png',
       websiteLink: 'https://www.tacoselregiosatx.com/',
     },
     {
       title: 'Masshole, Lobster Truck',
-      image: '../public/images/Masshole.jpg',
+      image: '/images/Masshole.jpg',
       websiteLink: 'https://massholelobstertruck.com/',
     },
     {
       title: 'Area 51, Food Park',
-      image: '../public/images/Area51.jpg',
+      image: '/images/Area51.jpg',
       websiteLink: 'https://www.facebook.com/area51foodpark/',
     },
     {
       title: 'RJ Indian Street Food',
-      image: '../public/images/RjIndian.jpg',
+      image: '/images/RjIndian.jpg',
       websiteLink: 'https://www.yelp.com/biz/rj-indian-street-food-san-antonio',
     },
 
