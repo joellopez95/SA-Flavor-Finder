@@ -1,4 +1,3 @@
-import React from 'react';
 import './FoodTrucks.css'; // Import your styles
 
 const trucks = () => {
@@ -22,6 +21,16 @@ const trucks = () => {
       title: 'RJ Indian Street Food',
       image: '/images/RjIndian.jpg',
       websiteLink: 'https://www.yelp.com/biz/rj-indian-street-food-san-antonio',
+    },
+    {
+      title: 'El Sabor De Guanajuato',
+      image: '/images/guanajuato.jpg',
+      websiteLink: 'https://www.yelp.com/biz/el-sabor-de-guanajuato-san-antonio',
+    },
+    {
+      title: 'Gordos Mini Tacos',
+      image: '/images/gordos.jpg',
+      websiteLink: 'https://www.yelp.com/biz/gordos-mini-tacos-and-snacks-san-antonio',
     },
 
   ];

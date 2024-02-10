@@ -1,4 +1,3 @@
-import React from 'react';
 import './Restaurant.css'; // Import your styles
 
 const restaurant = () => {
@@ -15,7 +14,7 @@ const restaurant = () => {
     },
     {
       title: 'Zaatar Lebanese Restaurant',
-      image: '/images/zaatar.png',
+      image: '/images/Zaatar.png',
       deployedLink:'https://www.yelp.com/biz/zaatar-lebanese-grill-san-antonio',
     },
     {
@@ -27,6 +26,11 @@ const restaurant = () => {
       title: 'Pollos Asados Los Nortenos',
       image: '/images/pollos.jpg',
       deployedLink: 'https://www.yelp.com/biz/pollos-asados-los-norte%C3%B1os-san-antonio',
+    },
+    {
+      title: 'Grits Mill Restaurant',
+      image: '/images/gritsmille.jpg',
+      deployedLink: 'https://gristmillrestaurant.com/',
     },
   ];
 

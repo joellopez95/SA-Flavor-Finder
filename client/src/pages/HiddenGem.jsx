@@ -1,4 +1,3 @@
-import React from 'react';
 import './HiddenGem.css'; // Import your styles
 
 const hiddenGem = () => {
