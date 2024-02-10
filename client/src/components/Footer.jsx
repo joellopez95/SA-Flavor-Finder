@@ -8,10 +8,8 @@ function Footer() {
   return (
     
     <div className='container' style={{ background: "black", color: "silver", justifyContent: "flex-end" }}>
-     
-         
+      
       <center>
-     
       <div className="">
       <p className="us">Get to know us!</p>
       <p>
