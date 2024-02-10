@@ -31,8 +31,8 @@ const restaurant = () => {
   ];
 
   return (
-    <section className="portfolio-section">
-      <div className="portfolio-content">
+    <section className="Restaurant-section">
+      <div className="Restaurant-content">
       <h2>Restaurants 🍽️</h2>
 
         <div className="projects-container">

@@ -23,6 +23,7 @@ const trucks = () => {
       image: '../public/images/RjIndian.jpg',
       websiteLink: 'https://www.yelp.com/biz/rj-indian-street-food-san-antonio',
     },
+
   ];
 
   return (
@@ -30,13 +31,13 @@ const trucks = () => {
       <div className="trucks-content">
       <h2>Food Trucks! 🚚 </h2>
 
-        <div className="foodtruck-container">
+        <div className="trucks-container">
           {foodtrucks.map((foodtruck, index) => (
-            <div className="foodtruck-card" key={index}>
+            <div className="project-card" key={index}>
               <img src={foodtruck.image} alt={`${foodtruck.title} Screenshot`} />
-              <div className="foodtruck-info">
+              <div className="project-info">
                 <h3>{foodtruck.title}</h3>
-                <div className="foodtruck-links">
+                <div className="project-links">
                   <a href={foodtruck.websiteLink} target="_blank" rel="noopener noreferrer">
                     Website
                   </a>
