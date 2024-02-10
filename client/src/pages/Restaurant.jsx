@@ -15,7 +15,7 @@ const restaurant = () => {
     },
     {
       title: 'Zaatar Lebanese Restaurant',
-      image: '/images/zaatar.png',
+      image: '/images/Zaatar.png',
       deployedLink:'https://www.yelp.com/biz/zaatar-lebanese-grill-san-antonio',
     },
     {
