@@ -184,15 +184,22 @@ input:focus {
 }
 
 .GemsCard {
-  color: black;
+  color: red;
+  background-color: black;
 }
 
 .TruckCard {
-  color: black;
+  color: red;
 }
 
 .RestaurantCard {
-  color: black;
+  color: red;
+  background-color: black;
+}
+
+.SaCard {
+  color: red;
+  background-color: black;
 }
 
 

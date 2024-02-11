@@ -39,7 +39,7 @@ const Home = () => {
             </Link>
             <Link to="/SanAntonio" className="link-item">
               <img className="image__img" src='/images/Bluebonnet.jpg' height="300" width="350" alt="Restaurants" />
-              <p className="title">San Antonio</p>
+              <p className="SaCard">San Antonio</p>
             </Link>
           </div>
         </center>
