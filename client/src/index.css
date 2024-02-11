@@ -190,6 +190,7 @@ input:focus {
 
 .TruckCard {
   color: red;
+  background-color: black;
 }
 
 .RestaurantCard {
