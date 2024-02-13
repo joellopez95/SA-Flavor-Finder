@@ -5,32 +5,32 @@ const restaurant = () => {
     {
       title: 'La Panaderia',
       image: '/images/panaderia.jpg',
-      deployedLink: 'https://twitter.com/breadcultura',
+      websiteLink: 'https://twitter.com/breadcultura',
     },
     {
       title: 'Curry Boys BBQ',
       image: '/images/curry.jpg',
-      deployedLink: 'https://www.yelp.com/biz/curry-boys-bbq-san-antonio-2',
+      websiteLink: 'https://www.yelp.com/biz/curry-boys-bbq-san-antonio-2',
     },
     {
       title: 'Zaatar Lebanese Restaurant',
       image: '/images/zaatar.jpeg',
-      deployedLink:'https://www.yelp.com/biz/zaatar-lebanese-grill-san-antonio',
+      websiteLink:'https://www.yelp.com/biz/zaatar-lebanese-grill-san-antonio',
     },
     {
       title: 'Simis Indian Cuisine',
       image: '/images/simis.jpg',
-      deployedLink: 'https://www.yelp.com/biz/simis-india-cuisine-san-antonio',
+      websiteLink: 'https://www.yelp.com/biz/simis-india-cuisine-san-antonio',
     },
     {
       title: 'Pollos Asados Los Nortenos',
       image: '/images/pollos.jpg',
-      deployedLink: 'https://www.yelp.com/biz/pollos-asados-los-norte%C3%B1os-san-antonio',
+      websiteLink: 'https://www.yelp.com/biz/pollos-asados-los-norte%C3%B1os-san-antonio',
     },
     {
       title: 'Grist Mill Restaurant',
       image: '/images/grist.jpg',
-      deployedLink: 'https://gristmillrestaurant.com/',
+      websiteLink: 'https://gristmillrestaurant.com/',
     },
   ];
 
@@ -59,7 +59,7 @@ const restaurant = () => {
               <div className="project-info">
                 <h3>{project.title}</h3>
                 <div className="project-links">
-                  <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">
+                  <a href={project.websiteLink} target="_blank" rel="noopener noreferrer">
                     Website
                   </a>
                   

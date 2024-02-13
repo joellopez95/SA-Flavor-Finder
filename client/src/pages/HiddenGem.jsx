@@ -5,32 +5,32 @@ const hiddenGem = () => {
     {
       title: 'The Doseum',
       image: '/images/TheDoseum.jpg',
-      website: 'https://www.thedoseum.org/',
+      websiteLink: 'https://www.thedoseum.org/',
     },
     {
       title: 'Yanaguana Garden at Hemisfair',
       image: '/images/yanaguana-gardens.jpg',
-      website: 'https://hemisfair.org/play/',
+      websiteLink: 'https://hemisfair.org/play/',
     },
     {
       title: 'San Antonio Zoo',
       image: '/images/SaZoo.jpg',
-      website:'https://sazoo.org/',
+      websiteLink:'https://sazoo.org/',
     },
     {
       title: 'The Alamo',
       image: '/images/Alamo.jpg',
-      website: 'https://www.thealamo.org/',
+      websiteLink: 'https://www.thealamo.org/',
     },
     {
       title: 'Tree Haus Tavern',
       image: '/images/treeHaus.jpg',
-      website: 'https://www.treehaustavern.com/gallery',
+      websiteLink: 'https://www.treehaustavern.com/gallery',
     },
     {
       title: 'San Antonio Museum of Art',
       image: '/images/Museum.jpg',
-      website: 'https://www.samuseum.org/',
+      websiteLink: 'https://www.samuseum.org/',
 
     },
   ];
@@ -61,7 +61,7 @@ const hiddenGem = () => {
               <div className="project-info">
                 <h3>{project.title}</h3>
                 <div className="project-links">
-                  <a href={project.website} target="_blank" rel="noopener noreferrer">
+                  <a href={project.websiteLink} target="_blank" rel="noopener noreferrer">
                     Website
                   </a>
                 </div>
