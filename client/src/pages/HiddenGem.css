@@ -3,6 +3,8 @@
 .portfolio-section {
   padding: 20px;
   text-align: center;
+  /*title and github repo*/
+  color: white;
 }
 
 .portfolio-content {
@@ -25,6 +27,8 @@
 
 .project-card:hover {
   transform: scale(1.05);
+  /*github repo link color*/
+  color: white;
 }
 
 .project-card img {
@@ -35,18 +39,30 @@
 
 .project-info {
   padding: 15px;
+  /*github repo only*/
+  color: red;
 }
 
 .project-info h3 {
-  margin-top: 0;
+  margin: 0;
+  /*title*/
+  color: red;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .project-links a {
   display: block;
-  margin-top: 10px;
-  color: #007bff;
+  margin:10;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: red 0.3s ease;
+  font-size: 20px;
+  -webkit-text-fill-color: red;
 }
 
-.project-links a:hover 
+.deployedLink {
+  color: green;
+}
+
+.project-links a:hover {
+}

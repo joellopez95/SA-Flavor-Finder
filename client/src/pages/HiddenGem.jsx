@@ -5,40 +5,54 @@ const hiddenGem = () => {
     {
       title: 'The Doseum',
       image: '/images/TheDoseum.jpg',
-      deployedLink: 'https://www.thedoseum.org/',
+      website: 'https://www.thedoseum.org/',
     },
     {
       title: 'Yanaguana Garden at Hemisfair',
       image: '/images/yanaguana-gardens.jpg',
-      deployedLink: 'https://hemisfair.org/play/',
+      website: 'https://hemisfair.org/play/',
     },
     {
       title: 'San Antonio Zoo',
-      image: '/images/Zoo.jpg',
-      deployedLink:'https://sazoo.org/',
+      image: '/images/SaZoo.jpg',
+      website:'https://sazoo.org/',
     },
     {
       title: 'The Alamo',
       image: '/images/Alamo.jpg',
-      deployedLink: 'https://www.thealamo.org/',
+      website: 'https://www.thealamo.org/',
     },
     {
       title: 'Tree Haus Tavern',
       image: '/images/treeHaus.jpg',
-      deployedLink: 'https://www.treehaustavern.com/gallery',
+      website: 'https://www.treehaustavern.com/gallery',
     },
     {
       title: 'San Antonio Museum of Art',
       image: '/images/Museum.jpg',
-      deployedLink: 'https://www.samuseum.org/',
+      website: 'https://www.samuseum.org/',
 
     },
   ];
+
+  const myStyle = {
+    backgroundImage: "url('images/banner.webp')",
+    // height: "100vh",
+    marginTop: "10px",
+    marginRight: "-170px",
+    marginLeft: "-170px",
+    fontSize: "40px",
+    backgroundSize: "2000px",
+    backgroundRepeat: "no-repeat",
+  };
+
 
   return (
     <section className="portfolio-section">
       <div className="portfolio-content">
       <h1>Hidden Gems 🚀</h1>
+
+      <div style={myStyle}>
 
         <div className="projects-container">
           {projects.map((project, index) => (
@@ -47,17 +61,15 @@ const hiddenGem = () => {
               <div className="project-info">
                 <h3>{project.title}</h3>
                 <div className="project-links">
-                  <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">
-                    Deployed App
-                  </a>
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    GitHub Repository
+                  <a href={project.website} target="_blank" rel="noopener noreferrer">
+                    Website
                   </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );
