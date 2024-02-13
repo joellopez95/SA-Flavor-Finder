@@ -35,10 +35,23 @@ const SanAntonio = () => {
 
   ];
 
+  const myStyle = {
+    backgroundImage: "url('images/banner.webp')",
+    // height: "100vh",
+    marginTop: "10px",
+    marginRight: "-170px",
+    marginLeft: "-170px",
+    fontSize: "40px",
+    backgroundSize: "2000px",
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
     <section className="SanAntonio-section">
       <div className="SanAntonio-content">
       <h1>San Antonio and Surrounding areas 🪻 </h1>
+
+      <div style={myStyle}>
 
         <div className="projects-container">
           {projects.map((project, index) => (
@@ -48,7 +61,7 @@ const SanAntonio = () => {
                 <h3>{project.title}</h3>
                 <div className="project-links">
                   <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">
-                    Restaurant Website
+                    Website
                   </a>
                   
                 </div>
@@ -56,6 +69,7 @@ const SanAntonio = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );
