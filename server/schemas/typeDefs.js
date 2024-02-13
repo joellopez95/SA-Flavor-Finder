@@ -53,8 +53,17 @@ type Mutation {
   addRestaurant(name: String!, description: String!, image: String, website: String, location: String!, categoryId: ID!): Restaurant
   addFoodTruck(name: String!, description: String!, image: String, website: String, location: String!, categoryId: ID!): FoodTruck
   addHiddenGem(name: String!, description: String!, image: String, website: String, location: String!, categoryId: ID!): HiddenGem
+
 }`;
 module.exports = typeDefs;
 
 // made changes
 
+// addThought(thoughtText: String!, thoughtAuthor: String!): Thought
+// addComment(
+//   thoughtId: ID!
+//   commentText: String!
+//   commentAuthor: String!
+// ): Thought
+// removeThought(thoughtId: ID!): Thought
+// removeComment(thoughtId: ID!, commentId: ID!): Thought
