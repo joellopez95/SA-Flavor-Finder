@@ -1,5 +1,3 @@
-
-
 import {
   UPDATE_CATEGORIES,
   UPDATE_CURRENT_CATEGORY,
@@ -9,7 +7,7 @@ import {
   ADD_HIDDEN_GEM,
   ADD_FOOD_TRUCK,
   ADD_RESTAURANT,
-  ADD_COMMENT,
+  ADD_RECOMMENDATION,
   ADD_THOUGHT,
 } from './actions';
 
@@ -48,20 +46,30 @@ export const reducer = (state = initialState, action) => {
         userData: action.userData,
       };
     case ADD_HIDDEN_GEM:
-      // Add logic to update state with added hidden gem data
-      return state;
+      return {
+        ...state,
+        hiddenGems: [...state.hiddenGems, action.hiddenGem], // Assuming hiddenGems is an array in state
+      };
     case ADD_FOOD_TRUCK:
-      // Add logic to update state with added food truck data
-      return state;
+      return {
+        ...state,
+        foodTrucks: [...state.foodTrucks, action.foodTruck], // Assuming foodTrucks is an array in state
+      };
     case ADD_RESTAURANT:
-      // Add logic to update state with added restaurant data
-      return state;
-    case ADD_COMMENT:
-      // Add logic to update state with added comment data
-      return state;
+      return {
+        ...state,
+        restaurants: [...state.restaurants, action.restaurant], // Assuming restaurants is an array in state
+      };
+    case ADD_RECOMMENDATION:
+      return {
+        ...state,
+        recommendations: [...state.recommendations, action.recommendation], // Assuming recommendations is an array in state
+      };
     case ADD_THOUGHT:
-      // Add logic to update state with added thought data
-      return state;
+      return {
+        ...state,
+        thoughts: [...state.thoughts, action.thought], // Assuming thoughts is an array in state
+      };
     default:
       return state;
   }

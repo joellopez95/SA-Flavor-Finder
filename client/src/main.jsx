@@ -10,7 +10,7 @@ import App from './App.jsx';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-
+import RecommendationPage from './pages/Recommendations';
 // import SingleThought from './pages/SingleThought';
 
 
@@ -51,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: '/sanAntonio',
         element: <SanAntonio />
+      },
+      {
+        path: '/recommendations',
+        element: <RecommendationPage />
       },
       // {
       //   path: '/thoughts/:thoughtId',

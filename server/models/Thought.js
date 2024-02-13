@@ -1,45 +1,40 @@
-// const { Schema, model } = require('mongoose');
-// const dateFormat = require('../utils/dateFormat');
+const { Schema, model } = require('mongoose');
 
-// const thoughtSchema = new Schema({
-//   thoughtText: {
-//     type: String,
-//     required: 'You need to leave a thought!',
-//     minlength: 1,
-//     maxlength: 280,
-//     trim: true,
-//   },
-//   thoughtAuthor: {
-//     type: String,
-//     required: true,
-//     trim: true,
-//   },
-//   createdAt: {
-//     type: Date,
-//     default: Date.now,
-//     get: (timestamp) => dateFormat(timestamp),
-//   },
-//   comments: [
-//     {
-//       commentText: {
-//         type: String,
-//         required: true,
-//         minlength: 1,
-//         maxlength: 280,
-//       },
-//       commentAuthor: {
-//         type: String,
-//         required: true,
-//       },
-//       createdAt: {
-//         type: Date,
-//         default: Date.now,
-//         get: (timestamp) => dateFormat(timestamp),
-//       },
-//     },
-//   ],
-// });
+const thoughtSchema = new Schema(
+  {
+    thoughtText: {
+      type: String,
+      required: true,
+      maxLength: 280
+    },
+    thoughtAuthor: {
+      type: String,
+      required: true
+    },
+    createdAt: {
+      type: Date,
+      default: Date.now
+    },
+    comments: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Comment'
+      }
+    ]
+  },
+  {
+    toJSON: {
+      virtuals: true,
+      getters: true
+    },
+    id: false
+  }
+);
 
-// const Thought = model('Thought', thoughtSchema);
+thoughtSchema.virtual('commentCount').get(function() {
+  return this.comments.length;
+});
 
-// module.exports = Thought;
+const Thought = model('Thought', thoughtSchema);
+
+module.exports = Thought;

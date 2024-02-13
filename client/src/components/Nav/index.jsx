@@ -11,7 +11,11 @@ function Nav() {
               Logout
             </a>
           </li>
-         
+          <li className="mx-1">
+            <Link to="/recommendations">
+             Recommendations
+            </Link>
+          </li>
         </ul>
       );
     } else {
