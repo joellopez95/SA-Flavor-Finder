@@ -255,23 +255,26 @@ const RecommendationPage = () => {
     backgroundImage: "url('images/banner.webp')",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    minHeight: "60vh",
+    minHeight: "80vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
     position: "relative",
+    marginRight: "-170px",
+    marginLeft: "-170px",
   };
 
-  const titleStyle = {
-    position: "absolute",
-    top: "-20px",
-    left: "50%",
-    transform: "translateX(-50%)",
-    color: "white",
-    fontSize: "40px",
-    zIndex: "1", // Ensure title appears above navbar
-  };
+  // const titleStyle = {
+  //   position: "absolute",
+  //   top: "-70px",
+  //   bottom: "90%",
+  //   left: "50%",
+  //   transform: "translateX(-50%)",
+  //   color: "white",
+  //   fontSize: "40px",
+  //   zIndex: "1", // Ensure title appears above navbar
+  // };
 
   const buttonStyle = {
     backgroundColor: "black",
@@ -296,14 +299,22 @@ const RecommendationPage = () => {
   };
 
   return (
-    <div style={backgroundStyle}>
-      <h1 style={titleStyle}>Recommendations 📝</h1>
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-md-8">
-            {renderRecommendations()}
-            <form onSubmit={handleSubmit}>
-              <div className="mb-3">
+    <div className="container my-1">
+<center>
+       <h1 className="rec3">Recommendations 📝</h1>
+</center>
+<div style={backgroundStyle}>
+<p className="rec">Have a recommendation?</p><br></br>
+      <p className="rec2"><strong>Tell us about it!</strong></p>
+      <br></br>
+
+      <div className="container">        
+        <div className="row justify-content-center">         
+          <div className="col-md-8">           
+            {renderRecommendations()}            
+            <center>              
+            <form onSubmit={handleSubmit}>             
+              <div className="mb-3">               
                 <input
                   type="text"
                   name="username"
@@ -331,9 +342,11 @@ const RecommendationPage = () => {
               </div>
               <button type="submit" className="btn btn-danger" style={buttonStyle}>Add Recommendation</button>
             </form>
-          </div>
-        </div>
-      </div>
+            </center>
+            </div>
+          </div>          
+        </div>        
+      </div>      
     </div>
   );
 };

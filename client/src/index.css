@@ -240,6 +240,8 @@ height: 50px;
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
+  font-size: 20px;
+  margin-top: 0px;
 }
 
 .mx-2 {
@@ -249,8 +251,9 @@ height: 50px;
 
 .mx-3 {
   position:fixed;
-  top: 10px;
+  top: 20px;
   right: 10px;
+  font-size: 20px;
 }
 
 .mx-4 {
@@ -327,10 +330,6 @@ width: 100%;
   backdrop-filter: blur(5px);
 }  
 
-/*.image__overlay--primary {
-  background: black;
-}  */
-
  .image__overlay > * {
 transform: translateY(20px);
 transition: transform 0.25s;
@@ -375,6 +374,21 @@ opacity: 1;
 /* go to signup at bottom of page */
 .signup {
   color: black;
+}
+
+.rec {
+  font-size: 30px;
+  color: white;
+}
+
+.rec2 {
+  color: black;
+  font-size: 25px;
+  margin-top: -30px;
+}
+
+.rec3 {
+  padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
