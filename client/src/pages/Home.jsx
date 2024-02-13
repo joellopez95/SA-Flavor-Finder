@@ -26,8 +26,7 @@ const Home = () => {
               <img className="image__img" src='/images/naturalbridge.jpg' height="300" width="370" alt="Hidden Gems" />
               <p className="GemsCard">Hidden Gems</p>
             </Link>
-
-          
+            
             <Link to="/foodtrucks" className="link-item">
               <img className="image__img" src='/images/foodtruck.jpg' height="300" width="350" alt="Food Trucks" />
               <p className="TruckCard">Food Trucks</p>
@@ -39,7 +38,7 @@ const Home = () => {
             </Link>
             <Link to="/SanAntonio" className="link-item">
               <img className="image__img" src='/images/Bluebonnet.jpg' height="300" width="350" alt="Restaurants" />
-              <p className="SaCard">San Antonio</p>
+              <p className="title">San Antonio</p>
             </Link>
           </div>
         </center>
@@ -50,32 +49,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// const Home = () => {
-//   return (
-//     <div className="home">
-//       <h1>Welcome to SA Flavor Finder</h1>
-//       <div className="card-container">
-//         <Link to="/hiddengem" className="card">
-//           <h2>Hidden Gems</h2>
-//           <p>Discover hidden culinary treasures in your area.</p>
-//         </Link>
-//         <Link to="/restaurants" className="card">
-//           <h2>Restaurants</h2>
-//           <p>Explore delicious restaurants nearby.</p>
-//         </Link>
-//         <Link to="/foodtrucks" className="card">
-//           <h2>Food Trucks</h2>
-//           <p>Find tasty food trucks serving up delicious meals.</p>
-//         </Link>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Home;

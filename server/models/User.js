@@ -28,6 +28,12 @@ const userSchema = new Schema({
     type: Boolean,
     default: false
   },
+  // thoughts: [
+  //   {
+  //     type: Schema.Types.ObjectId,
+  //     ref: 'Thought',
+  //   },
+  // ],
 });
 
 // set up pre-save middleware to create password
