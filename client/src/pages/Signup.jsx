@@ -43,6 +43,7 @@ function Signup(props) {
       fontSize: "40px",
       backgroundSize: "2000px",
       backgroundRepeat: "no-repeat",
+      minHeight: "70vh",
     };
   
 
