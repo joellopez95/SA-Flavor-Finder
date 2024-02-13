@@ -38,9 +38,11 @@ function Login(props) {
           fontSize: "40px",
           backgroundSize: "2000px",
           backgroundRepeat: "no-repeat",
-  };
+          minHeight: "70vh",
+        };
 
   return (
+    
     <div className="container my-1">
       <center>
                 <h1><strong> Welcome to SA Flavor Finder! </strong></h1>
@@ -48,6 +50,7 @@ function Login(props) {
                 <h2>Discover The Best Local Dining Spots For An Authentic Experience...</h2>
       </center>
       <div style={myStyle}>
+<br></br>
 <br></br>
 <center>
       <h3><strong>Login</strong></h3><br></br>

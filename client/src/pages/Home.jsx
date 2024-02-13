@@ -8,6 +8,7 @@ const myStyle = {
   fontSize: "40px",
   backgroundSize: "2000px",
   backgroundRepeat: "no-repeat",
+  minHeight: "70vh",
 };
 
 const Home = () => {
@@ -19,26 +20,51 @@ const Home = () => {
       </center>
       <div style={myStyle}>
         <center>
+          <br/>
           <br />
           <div style={{ display: 'flex', justifyContent: 'space-around' }}>
 
             <Link to="/hiddengem" className="link-item">
+            <div className="image">
               <img className="image__img" src='/images/naturalbridge.jpg' height="300" width="370" alt="Hidden Gems" />
-              <p className="GemsCard">Hidden Gems</p>
-            </Link>
-            
-            <Link to="/foodtrucks" className="link-item">
-              <img className="image__img" src='/images/foodtruck.jpg' height="300" width="350" alt="Food Trucks" />
-              <p className="TruckCard">Food Trucks</p>
+              <div className="image__overlay image__overlay--blur">
+                <div className="image__title">Hidden Gems</div>
+              <p className="image__description"></p>
+            </div>
+            </div>
             </Link>
 
-            <Link to="/restaurants" className="link-item">
-              <img className="image__img" src='/images/simis.jpg' height="300" width="350" alt="Restaurants" />
-              <p className="RestaurantCard">Restaurants</p>
+            
+            <Link to="/foodtrucks" className="link-item">
+            <div className="image">
+              <img className="image__img" src='/images/foodtruck.jpg' height="300" width="350" alt="Food Trucks" />
+              <div className="image__overlay image__overlay--blur">
+              <div className="image__title">Food Trucks</div>
+              <p className="TruckCard"></p>
+              </div>
+              </div>
             </Link>
+
+
+            <Link to="/restaurants" className="link-item">
+            <div className="image">
+              <img className="image__img" src='/images/simis.jpg' height="300" width="350" alt="Restaurants" />
+              <div className="image__overlay image__overlay--blur">
+              <div className="image__title">Restaurants</div>
+              <p className="RestaurantCard"></p>
+              </div>
+              </div>
+            </Link>
+
+
             <Link to="/SanAntonio" className="link-item">
+            <div className="image">
               <img className="image__img" src='/images/Bluebonnet.jpg' height="300" width="350" alt="Restaurants" />
-              <p className="SaCard">San Antonio</p>
+              <div className="image__overlay image__overlay--blur">
+              <div className="image__title">Surrounding Areas</div>
+              <p className="SaCard"></p>
+              </div>
+              </div>
             </Link>
           </div>
         </center>

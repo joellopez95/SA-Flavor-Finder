@@ -40,15 +40,16 @@
 .project-info {
   padding: 15px;
   /*github repo only*/
-  color: red;
+  color: black;
 }
 
 .project-info h3 {
   margin: 0;
   /*title*/
-  color: red;
+  color: black;
   font-size: 30px;
   line-height: 30px;
+  font-weight: bold;
 }
 
 .project-links a {
@@ -57,11 +58,7 @@
   text-decoration: none;
   transition: red 0.3s ease;
   font-size: 20px;
-  -webkit-text-fill-color: red;
-}
-
-.deployedLink {
-  color: green;
+  -webkit-text-fill-color: blue;
 }
 
 .project-links a:hover {

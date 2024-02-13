@@ -1,7 +1,7 @@
 :root {
   /* navbar background-color */
   --primary: black;
-  --secondary: red;
+  --secondary: rgb(10, 9, 9);
   /* Go to login */
   --tertiary: rgb(8, 8, 8);
   /* title */
@@ -61,7 +61,7 @@ h2 {
   text-decoration-color: black;
   text-decoration-thickness: 2px;
   text-align: center;
-  color:white;
+  color: white;
 }
 
 /* .dis {
@@ -83,7 +83,7 @@ ul {
 /* signup */
 h3 {
   font-size: 1.75rem;
-  color: red;
+  color: rgb(14, 13, 13);
 }
 
 
@@ -184,10 +184,10 @@ input:focus {
   box-shadow: 0 0 .25rem red;
 }
 
-.GemsCard {
+/* .GemsCard {
   color: red;
   background-color: black;
-}
+} */
 
 .TruckCard {
   color: red;
@@ -296,66 +296,66 @@ height: 50px;
   text-align: center;
 }
 
- /* .image { */
-  /* position: relative; */
-  /* width: 400px; */
-  /* }  */
+ .image { 
+   position: relative;
+   width: 370px;
+  }
 
- /* .image__img {
+ .image__img {
 display: block;
 width: 100%;
-}  */
+}
 
-/* .image__overlay {
+.image__overlay {
   position:absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
-  color: red;
+  color: rgb(203, 199, 199);
   font-family: 'quicksand', sans-sari;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0; 
-   transition: opacity 0.25s;
-} */
+  transition: opacity 0.25s;
+}
 
-/* .image__overlay--blur {
+ .image__overlay--blur {
   backdrop-filter: blur(5px);
 }  
 
-.image__overlay--primary {
+/*.image__overlay--primary {
   background: black;
 }  */
 
-/* .image__overlay > * {
+ .image__overlay > * {
 transform: translateY(20px);
 transition: transform 0.25s;
 }
 
 .image__overlay:hover {
 opacity: 1;
-}  */
+}
 
- /* .image__overlay:hover > * {
+  .image__overlay:hover > * {
   transform: translateY(0);
 }
 
 
 .image__title {
-  font-size: 2em;
+  font-size: .75em;
   font-weight: bold;
-} */
+}
 
-/* .image__description {
+ .image__description {
   font-size: 1.25em;
   margin-top: 0.25em;
 }
 
-  img:hover {
+ /*img:hover {
   opacity: 50%;
 }
 
@@ -363,9 +363,9 @@ opacity: 1;
   padding-left: 100px;
 } */
 
-/*.error-text {
+.error-text {
   color: var(--error);
-} */
+} 
 
 /* go to login at bottom of page */
 .login {

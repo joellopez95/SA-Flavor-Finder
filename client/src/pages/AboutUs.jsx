@@ -6,7 +6,7 @@ const About = () => {
     backgroundImage: "url('images/banner.webp')",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    minHeight: "100vh",
+    minHeight: "75vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -17,7 +17,7 @@ const About = () => {
 
   const textStyle = {
     backgroundColor: "rgba(0, 0, 0, 0.8)", // Dark background color
-    color: "#ffffff", // White text color
+    color: "white", // White text color
     padding: "20px",
     borderRadius: "10px",
   };
