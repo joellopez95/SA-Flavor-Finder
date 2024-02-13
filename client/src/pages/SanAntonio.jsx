@@ -35,10 +35,13 @@ const SanAntonio = () => {
 
   ];
 
+ 
+
   return (
     <section className="SanAntonio-section">
       <div className="SanAntonio-content">
       <h1>San Antonio and Surrounding areas 🪻 </h1>
+
 
         <div className="projects-container">
           {projects.map((project, index) => (
