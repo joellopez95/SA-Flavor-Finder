@@ -5,8 +5,8 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="us">
-          <li className="mx-3">
+        <ul className="flex-row">
+          <li className="mx-1">
             <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
